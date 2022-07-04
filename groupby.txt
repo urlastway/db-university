@@ -1,0 +1,19 @@
+1.
+SELECT COUNT(`id`) AS 'total_folowers', YEAR(`enrolment_date`) AS 'year_folow' 
+FROM `students` 
+GROUP BY `year_folow`;
+
+2.
+SELECT COUNT(`id`) AS 'totale_insegnanti' 
+FROM `teachers` 
+GROUP BY `office_address`;
+
+3.
+SELECT `exam_id`, AVG(`vote`) 
+FROM `exam_student` 
+GROUP BY `exam_id`;
+
+4.
+SELECT COUNT(`id`) AS 'totale_corsi_in_ogni_edificio' 
+FROM `degrees` 
+GROUP BY `department_id`;
